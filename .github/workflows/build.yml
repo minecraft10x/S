@@ -1,0 +1,28 @@
+name: Build Minecraft10x Plugin
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download code
+        uses: actions/checkout@v4
+
+      - name: Installeer Java 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Bouw plugin met Maven
+        run: mvn package -DskipTests
+
+      - name: Upload plugin JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: Minecraft10x-plugin
+          path: target/Minecraft10x-1.0.0.jar
