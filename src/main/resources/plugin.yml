@@ -1,5 +1,5 @@
 name: Minecraft10x
-version: 1.0.0
+version: 1.0.1
 main: nl.minecraft10x.plugin.Minecraft10xPlugin
 api-version: 1.20
 description: Alles x10! Drops, spawns, area mining en XXL crafting table.
