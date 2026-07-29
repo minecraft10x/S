@@ -1,0 +1,11 @@
+name: Minecraft10x
+version: 1.0.0
+main: nl.minecraft10x.plugin.Minecraft10xPlugin
+api-version: 1.20
+description: Alles x10! Drops, spawns, area mining en XXL crafting table.
+author: Claude
+
+commands:
+  xxlcraft:
+    description: Open de XXL Crafting Table
+    usage: /xxlcraft
