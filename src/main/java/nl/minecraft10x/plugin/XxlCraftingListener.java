@@ -28,6 +28,9 @@ public class XxlCraftingListener implements Listener {
     }
 
     private void registerRecipe() {
+        // Registreer ook de XXL tools
+        XxlTools.registerRecipes(plugin);
+
         ItemStack xxlTable = createXxlTable();
         NamespacedKey key = new NamespacedKey(plugin, "xxl_crafting_table");
 
