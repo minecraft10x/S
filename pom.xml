@@ -6,7 +6,7 @@
 
     <groupId>nl.minecraft10x</groupId>
     <artifactId>Minecraft10x</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Minecraft10x</name>
